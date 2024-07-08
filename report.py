@@ -74,8 +74,8 @@ class reports(threading.Thread):
 			br.submit()
 			res=br.response().read()
 			if "Terima kasih atas masukan Anda." in res:
-				print "[*] Reported."
+				print("[*] Reported.")
 			else:
-				print "[-] Unreported."
+				print("[-] Unreported.")
 		except:
-			print "\r[-] Already Reports."
+			print("\r[-] Already Reports.")
